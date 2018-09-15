@@ -11,3 +11,22 @@ git log -p index.html
 ```
 git log -n <コミット数>
 ```
+## ローカルとリポジトリからファイルを削除する
+```
+git rm <ファイル名>
+git rm -r <ディレクトリ名>
+```
+## リモートリポジトリ（github）を新規追加する
+```
+originというショートカットでurlのリモートリポジトリを登録する
+git remote add origin htttps://github.com/user/repo.git
+```
+## ステージした変更を取り消す
+- ステージから取り消すだけなので、ローカルのファイルには影響を与えない
+```
+git reset HEAD <ファイル名>
+git reset HEAD <ディレクトリ名>
+
+全変更を取り消す
+git reset HEAD .
+```
