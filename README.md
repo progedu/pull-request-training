@@ -30,3 +30,12 @@ git reset HEAD <ディレクトリ名>
 全変更を取り消す
 git reset HEAD .
 ```
+## リモートから情報をローカルに取得する 　ワークツリーには反映されない
+```
+git fetch <リモート名>
+git fetch origin
+ワークツリーに反映する場合は、
+git merge <反映するブランチ名>
+```
+
+
