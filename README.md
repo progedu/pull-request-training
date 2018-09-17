@@ -37,5 +37,8 @@ git fetch origin
 ワークツリーに反映する場合は、
 git merge <反映するブランチ名>
 ```
-
+## fetch + merge = pull （注意：pullのときにマージされるのは今いるブランチ）
+```
+git pull
+```
 
